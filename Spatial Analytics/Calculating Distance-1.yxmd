@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ngod6\Downloads\delivery_truck_distance.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>delivery_truck_distance.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Start_Stop Description" size="255" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="V_WString" />
+            <Field name="Start_Stop Name" size="255" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="V_WString" />
+            <Field name="Start_Long" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="Double" />
+            <Field name="Start_Lat" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="Double" />
+            <Field name="Start_SpatialObj" size="2147483647" source="CreatePoints: x=Start_Long y=Start_Lat" type="SpatialObj" />
+            <Field name="End_Stop Description" size="255" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="V_String" />
+            <Field name="End_Stop Name" size="255" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="V_String" />
+            <Field name="End_Long" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="Double" />
+            <Field name="End_Lat" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Spatial Analytics\EN VR2 2021\Lesson 06 - Calculation Distance\Workflow\Output test.xlsx|||Sheet1" type="Double" />
+            <Field name="End_SpatialObj" size="2147483647" source="CreatePoints: x=End_Long y=End_Lat" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ngod6\Downloads\store_trade_areas.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>store_trade_areas.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Warehouse Trade Areas" size="2147483647" source="Summarize: SpatialObjCombine - SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+        <Position x="246" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputDistance value="True" />
+          <ReturnNearest value="False" />
+          <DistToInsideEdge value="False" />
+          <OutputDriveTimeAndDistance value="False" />
+          <SpatialObjSource>Start_SpatialObj</SpatialObjSource>
+          <SpatialObjDest>End_SpatialObj</SpatialObjDest>
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <AllowReverseRoute value="True" />
+          <MaxDriveTime value="30" />
+          <DriveDistanceOnly value="False" />
+          <OutputCardinalDirection value="True" />
+          <OutputDirectionDegrees value="True" />
+          <IsMetric value="True" />
+          <OutputUnits>Kilometers</OutputUnits>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+        <Position x="246" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputDistance value="True" />
+          <ReturnNearest value="False" />
+          <DistToInsideEdge value="False" />
+          <OutputDriveTimeAndDistance value="False" />
+          <SpatialObjSource>Warehouse Trade Areas</SpatialObjSource>
+          <SpatialObjDest>Warehouse Trade Areas</SpatialObjDest>
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <AllowReverseRoute value="True" />
+          <MaxDriveTime value="30" />
+          <DriveDistanceOnly value="False" />
+          <OutputCardinalDirection value="True" />
+          <OutputDirectionDegrees value="False" />
+          <IsMetric value="False" />
+          <OutputUnits>Miles</OutputUnits>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_16372_c5a68bd9a74df24ea770ac960acd1645_\Engine_16372_25560fc3503b7b42bba458a5b1e11a3d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Latest:GlobeXplorer</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_16372_c5a68bd9a74df24ea770ac960acd1645_\Engine_16372_9813b81097046a4c84bb43d2e273aeb9~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="198" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_16372_c5a68bd9a74df24ea770ac960acd1645_\Engine_16372_0160ccc6009913489516eb2d4d6e69ea~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Latest:GlobeXplorer</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+        <Position x="594" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputDistance value="True" />
+          <ReturnNearest value="False" />
+          <DistToInsideEdge value="False" />
+          <OutputDriveTimeAndDistance value="False" />
+          <SpatialObjSource>Start_SpatialObj</SpatialObjSource>
+          <SpatialObjDest>Warehouse Trade Areas</SpatialObjDest>
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <AllowReverseRoute value="True" />
+          <MaxDriveTime value="30" />
+          <DriveDistanceOnly value="False" />
+          <OutputCardinalDirection value="True" />
+          <OutputDirectionDegrees value="True" />
+          <IsMetric value="True" />
+          <OutputUnits>Kilometers</OutputUnits>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="498" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_16372_c5a68bd9a74df24ea770ac960acd1645_\Engine_16372_5a8b008b175829409d185cac3b301b9d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>Latest:GlobeXplorer</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+        <Position x="606" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputDistance value="True" />
+          <ReturnNearest value="False" />
+          <DistToInsideEdge value="True" />
+          <OutputDriveTimeAndDistance value="False" />
+          <SpatialObjSource>Start_SpatialObj</SpatialObjSource>
+          <SpatialObjDest>Warehouse Trade Areas</SpatialObjDest>
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <AllowReverseRoute value="True" />
+          <MaxDriveTime value="30" />
+          <DriveDistanceOnly value="False" />
+          <OutputCardinalDirection value="True" />
+          <OutputDirectionDegrees value="True" />
+          <IsMetric value="True" />
+          <OutputUnits>Kilometers</OutputUnits>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="690" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_16372_c5a68bd9a74df24ea770ac960acd1645_\Engine_16372_fb6701e1d0cb864a907bf7238a64de62~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Calculating Distance</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d6acf0d1-1a9f-4ac6-8513-af9e203b3bdb" />
+      <Telemetry>
+        <PreviousWorkflowId value="2fb1105c-62df-44a4-a8c1-8d812c067977" />
+        <OriginWorkflowId value="2fb1105c-62df-44a4-a8c1-8d812c067977" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
