@@ -1,0 +1,3100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="428" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">bookings_data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>bookings_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="R-DATA:" type="Double" />
+            <Field name="Month" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Bookings" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1049" y="583" width="433" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>TS Factory</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="1074" y="644" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="120" />
+              <Fields>
+                <Field name="Product" />
+                <Field name="Year" />
+                <Field name="Month" />
+                <Field name="Units" />
+                <Field name="Workers" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Jan</c>
+                  <c>383</c>
+                  <c>21</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Feb</c>
+                  <c>366</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Mar</c>
+                  <c>250</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Apr</c>
+                  <c>318</c>
+                  <c>19</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>May</c>
+                  <c>334</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Jun</c>
+                  <c>397</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Jul</c>
+                  <c>575</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Aug</c>
+                  <c>701</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Sep</c>
+                  <c>506</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Oct</c>
+                  <c>335</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Nov</c>
+                  <c>372</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2002</c>
+                  <c>Dec</c>
+                  <c>580</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Jan</c>
+                  <c>751</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Feb</c>
+                  <c>498</c>
+                  <c>21</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Mar</c>
+                  <c>649</c>
+                  <c>19</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Apr</c>
+                  <c>478</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>May</c>
+                  <c>606</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Jun</c>
+                  <c>980</c>
+                  <c>38</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Jul</c>
+                  <c>1137</c>
+                  <c>38</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Aug</c>
+                  <c>1280</c>
+                  <c>43</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Sep</c>
+                  <c>987</c>
+                  <c>35</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Oct</c>
+                  <c>723</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Nov</c>
+                  <c>545</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2003</c>
+                  <c>Dec</c>
+                  <c>731</c>
+                  <c>28</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Jan</c>
+                  <c>1615</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Feb</c>
+                  <c>1219</c>
+                  <c>42</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Mar</c>
+                  <c>940</c>
+                  <c>30</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Apr</c>
+                  <c>670</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>May</c>
+                  <c>972</c>
+                  <c>34</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Jun</c>
+                  <c>1543</c>
+                  <c>49</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Jul</c>
+                  <c>2079</c>
+                  <c>63</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Aug</c>
+                  <c>1928</c>
+                  <c>61</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Sep</c>
+                  <c>1509</c>
+                  <c>55</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Oct</c>
+                  <c>1047</c>
+                  <c>41</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Nov</c>
+                  <c>712</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2004</c>
+                  <c>Dec</c>
+                  <c>1492</c>
+                  <c>50</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Jan</c>
+                  <c>2214</c>
+                  <c>68</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Feb</c>
+                  <c>1928</c>
+                  <c>58</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Mar</c>
+                  <c>1780</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Apr</c>
+                  <c>1458</c>
+                  <c>44</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>May</c>
+                  <c>1573</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Jun</c>
+                  <c>2138</c>
+                  <c>74</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Jul</c>
+                  <c>2864</c>
+                  <c>90</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Aug</c>
+                  <c>3216</c>
+                  <c>98</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Sep</c>
+                  <c>1927</c>
+                  <c>67</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Oct</c>
+                  <c>1415</c>
+                  <c>44</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Nov</c>
+                  <c>1371</c>
+                  <c>44</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2005</c>
+                  <c>Dec</c>
+                  <c>2629</c>
+                  <c>80</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Jan</c>
+                  <c>3392</c>
+                  <c>112</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Feb</c>
+                  <c>3246</c>
+                  <c>107</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Mar</c>
+                  <c>2334</c>
+                  <c>71</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Apr</c>
+                  <c>1723</c>
+                  <c>61</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>May</c>
+                  <c>2458</c>
+                  <c>83</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Jun</c>
+                  <c>2709</c>
+                  <c>90</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Jul</c>
+                  <c>4615</c>
+                  <c>140</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Aug</c>
+                  <c>5739</c>
+                  <c>179</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Sep</c>
+                  <c>2913</c>
+                  <c>89</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Oct</c>
+                  <c>1939</c>
+                  <c>66</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Nov</c>
+                  <c>2039</c>
+                  <c>65</c>
+                </r>
+                <r>
+                  <c>tuba</c>
+                  <c>2006</c>
+                  <c>Dec</c>
+                  <c>3312</c>
+                  <c>103</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Jan</c>
+                  <c>7146</c>
+                  <c>223</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Feb</c>
+                  <c>4093</c>
+                  <c>125</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Mar</c>
+                  <c>3537</c>
+                  <c>110</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Apr</c>
+                  <c>2757</c>
+                  <c>93</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>May</c>
+                  <c>3045</c>
+                  <c>95</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Jun</c>
+                  <c>4827</c>
+                  <c>146</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Jul</c>
+                  <c>4163</c>
+                  <c>132</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Aug</c>
+                  <c>7811</c>
+                  <c>234</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Sep</c>
+                  <c>4644</c>
+                  <c>142</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Oct</c>
+                  <c>4645</c>
+                  <c>145</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Nov</c>
+                  <c>2980</c>
+                  <c>97</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2002</c>
+                  <c>Dec</c>
+                  <c>4515</c>
+                  <c>139</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Jan</c>
+                  <c>8133</c>
+                  <c>250</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Feb</c>
+                  <c>5337</c>
+                  <c>169</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Mar</c>
+                  <c>3946</c>
+                  <c>122</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Apr</c>
+                  <c>4286</c>
+                  <c>137</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>May</c>
+                  <c>4761</c>
+                  <c>149</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Jun</c>
+                  <c>7012</c>
+                  <c>211</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Jul</c>
+                  <c>8237</c>
+                  <c>251</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Aug</c>
+                  <c>8553</c>
+                  <c>261</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Sep</c>
+                  <c>6198</c>
+                  <c>194</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Oct</c>
+                  <c>4872</c>
+                  <c>147</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Nov</c>
+                  <c>4892</c>
+                  <c>157</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2003</c>
+                  <c>Dec</c>
+                  <c>5880</c>
+                  <c>179</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Jan</c>
+                  <c>11878</c>
+                  <c>360</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Feb</c>
+                  <c>9398</c>
+                  <c>290</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Mar</c>
+                  <c>8083</c>
+                  <c>244</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Apr</c>
+                  <c>5634</c>
+                  <c>178</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>May</c>
+                  <c>7675</c>
+                  <c>233</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Jun</c>
+                  <c>10328</c>
+                  <c>317</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Jul</c>
+                  <c>10539</c>
+                  <c>320</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Aug</c>
+                  <c>15578</c>
+                  <c>474</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Sep</c>
+                  <c>11067</c>
+                  <c>335</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Oct</c>
+                  <c>7534</c>
+                  <c>235</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Nov</c>
+                  <c>7023</c>
+                  <c>220</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2004</c>
+                  <c>Dec</c>
+                  <c>10733</c>
+                  <c>322</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Jan</c>
+                  <c>11853</c>
+                  <c>357</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Feb</c>
+                  <c>10716</c>
+                  <c>326</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Mar</c>
+                  <c>7405</c>
+                  <c>222</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Apr</c>
+                  <c>7009</c>
+                  <c>217</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>May</c>
+                  <c>8340</c>
+                  <c>250</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Jun</c>
+                  <c>12437</c>
+                  <c>375</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Jul</c>
+                  <c>12269</c>
+                  <c>370</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Aug</c>
+                  <c>16171</c>
+                  <c>495</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Sep</c>
+                  <c>10116</c>
+                  <c>305</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Oct</c>
+                  <c>10479</c>
+                  <c>324</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Nov</c>
+                  <c>7214</c>
+                  <c>225</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2005</c>
+                  <c>Dec</c>
+                  <c>13080</c>
+                  <c>396</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Jan</c>
+                  <c>17363</c>
+                  <c>531</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Feb</c>
+                  <c>16952</c>
+                  <c>513</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Mar</c>
+                  <c>9012</c>
+                  <c>270</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Apr</c>
+                  <c>7730</c>
+                  <c>238</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>May</c>
+                  <c>12345</c>
+                  <c>374</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Jun</c>
+                  <c>12055</c>
+                  <c>371</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Jul</c>
+                  <c>14496</c>
+                  <c>437</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Aug</c>
+                  <c>15654</c>
+                  <c>476</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Sep</c>
+                  <c>11063</c>
+                  <c>332</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Oct</c>
+                  <c>7934</c>
+                  <c>240</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Nov</c>
+                  <c>7108</c>
+                  <c>220</c>
+                </r>
+                <r>
+                  <c>trombone</c>
+                  <c>2006</c>
+                  <c>Dec</c>
+                  <c>11209</c>
+                  <c>344</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Product" size="8" source="TextInput:" type="String" />
+                <Field name="Year" source="TextInput:" type="Int16" />
+                <Field name="Month" size="3" source="TextInput:" type="String" />
+                <Field name="Units" source="TextInput:" type="Int16" />
+                <Field name="Workers" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings>
+            <Position x="1182" y="644" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="ARIMA">False</Value>
+              <Value name="use_covar">False</Value>
+              <Value name="covars">""</Value>
+              <Value name="ETS">True</Value>
+              <Value name="target">Units</Value>
+              <Value name="group.field">Product</Value>
+              <Value name="freq.hourly">False</Value>
+              <Value name="freq.daily">False</Value>
+              <Value name="freq.weekdays">False</Value>
+              <Value name="freq.weekly">False</Value>
+              <Value name="freq.monthly">True</Value>
+              <Value name="freq.quarterly">False</Value>
+              <Value name="freq.annually">False</Value>
+              <Value name="freq.other">False</Value>
+              <Value name="series.start">True</Value>
+              <Value name="start.year">2002</Value>
+              <Value name="start.month.qtr">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1242" y="716" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_d64e6ed2c9ed4c3f84ab2688448afaee_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings>
+            <Position x="1302" y="644" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="forecast">forecast</Value>
+              <Value name="large_conf">95</Value>
+              <Value name="small_conf">80</Value>
+              <Value name="horizon">6</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1398" y="632" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_a7959979d61049bcb158ec9719e2f587_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="161" y="583" width="325" height="253" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Forecasting</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="27">
+          <GuiSettings>
+            <Position x="186" y="704" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="mod_name">ETSexample</Value>
+              <Value name="target_field">Bookings</Value>
+              <Value name="freq_hourly">False</Value>
+              <Value name="freq_daily">False</Value>
+              <Value name="freq_weekdays">False</Value>
+              <Value name="freq_weekly">False</Value>
+              <Value name="freq_monthly">True</Value>
+              <Value name="freq_quarterly">False</Value>
+              <Value name="freq_annually">False</Value>
+              <Value name="freq_other">False</Value>
+              <Value name="error_auto">True</Value>
+              <Value name="error_add">False</Value>
+              <Value name="error_mult">False</Value>
+              <Value name="trend_type_auto">True</Value>
+              <Value name="trend_type_add">False</Value>
+              <Value name="trend_type_mult">False</Value>
+              <Value name="trend_type_none">False</Value>
+              <Value name="trend_damp_auto">True</Value>
+              <Value name="trend_damp_yes">False</Value>
+              <Value name="trend_damp_no">False</Value>
+              <Value name="seas_auto">True</Value>
+              <Value name="seas_add">False</Value>
+              <Value name="seas_mult">False</Value>
+              <Value name="seas_none">False</Value>
+              <Value name="ic_auto">True</Value>
+              <Value name="ic_aic">False</Value>
+              <Value name="ic_aicc">False</Value>
+              <Value name="ic_bic">False</Value>
+              <Value name="box_cox">False</Value>
+              <Value name="lambda">0.00</Value>
+              <Value name="series_start">True</Value>
+              <Value name="start_year">2002</Value>
+              <Value name="start_month_qtr">1</Value>
+              <Value name="forecast_periods">6</Value>
+              <Value name="alteryx.week.US">True</Value>
+              <Value name="alteryx.week.UK">False</Value>
+              <Value name="alteryx.week.ISO8601">False</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Report">
+              <RecordInfo>
+                <Field name="Report" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Interactive">
+              <RecordInfo>
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings>
+            <Position x="306" y="692" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="forecast">forecast</Value>
+              <Value name="large_conf">95</Value>
+              <Value name="small_conf">80</Value>
+              <Value name="horizon">6</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="402" y="632" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_5e0e0f02734049a1a0d98bda1371e52b_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="402" y="692" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_7a82b7e29d054d719bc64f4d295c1811_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="402" y="752" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_cc8d384fc3bb4ae2b79fdd73e9779e6b_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="161" y="54" width="770" height="519" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Comparing Models</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="630" y="188" width="276" height="360" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Combine and Compare models</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="186" y="404" width="180" height="144" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Separate into training and testing dataset</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings>
+            <Position x="438" y="356" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="mod_name">ARIMAexample</Value>
+              <Value name="target_field">Bookings</Value>
+              <Value name="use_covar">False</Value>
+              <Value name="covars">""</Value>
+              <Value name="use_covar_mean">True</Value>
+              <Value name="use_covar_diff">False</Value>
+              <Value name="freq_hourly">False</Value>
+              <Value name="freq_daily">False</Value>
+              <Value name="freq_weekdays">False</Value>
+              <Value name="freq_weekly">False</Value>
+              <Value name="freq_monthly">True</Value>
+              <Value name="freq_quarterly">False</Value>
+              <Value name="freq_annually">False</Value>
+              <Value name="freq_other">False</Value>
+              <Value name="custom_auto">False</Value>
+              <Value name="first_dif">False</Value>
+              <Value name="level_first_dif">0</Value>
+              <Value name="max_p">2</Value>
+              <Value name="max_q">2</Value>
+              <Value name="seas_dif">False</Value>
+              <Value name="level_seas_dif">0</Value>
+              <Value name="s_max_P">1</Value>
+              <Value name="s_max_Q">1</Value>
+              <Value name="ic_aic">False</Value>
+              <Value name="ic_aicc">True</Value>
+              <Value name="ic_bic">False</Value>
+              <Value name="full_enum">False</Value>
+              <Value name="max_order">5</Value>
+              <Value name="m_core">False</Value>
+              <Value name="drift">True</Value>
+              <Value name="box_cox">False</Value>
+              <Value name="lambda">0.00</Value>
+              <Value name="full_custom">False</Value>
+              <Value name="p">0</Value>
+              <Value name="d">0</Value>
+              <Value name="q">0</Value>
+              <Value name="S_P">0</Value>
+              <Value name="S_D">0</Value>
+              <Value name="S_Q">0</Value>
+              <Value name="m_drift">False</Value>
+              <Value name="m_box_cox">False</Value>
+              <Value name="m_lambda">0.00</Value>
+              <Value name="series_start">True</Value>
+              <Value name="start_year">2002</Value>
+              <Value name="start_month_qtr">1</Value>
+              <Value name="forecast_periods">6</Value>
+              <Value name="alteryx.week.US">True</Value>
+              <Value name="alteryx.week.UK">False</Value>
+              <Value name="alteryx.week.ISO8601">False</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.00</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Report">
+              <RecordInfo>
+                <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Interactive">
+              <RecordInfo>
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="534" y="308" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_7a99e1debca6411ea8f88e9a8961d069_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="534" y="356" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_f081102b357f41da83cd7afd033b6ae4_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="534" y="404" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_066b95c452b4487d962bd36c01779cdf_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="534" y="224" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_2ea12dc6153042a1ad95805795d6f7e2_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Relatório</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="534" y="164" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_7ebccaa8a2c4402e9966e95eac55b99a_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Relatório</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="534" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_33a47fe8205b4ad5914f5b55ff557cf6_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Perfil</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings>
+            <Position x="426" y="164" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="mod_name">ETSexample</Value>
+              <Value name="target_field">Bookings</Value>
+              <Value name="freq_hourly">False</Value>
+              <Value name="freq_daily">False</Value>
+              <Value name="freq_weekdays">False</Value>
+              <Value name="freq_weekly">False</Value>
+              <Value name="freq_monthly">True</Value>
+              <Value name="freq_quarterly">False</Value>
+              <Value name="freq_annually">False</Value>
+              <Value name="freq_other">False</Value>
+              <Value name="error_auto">True</Value>
+              <Value name="error_add">False</Value>
+              <Value name="error_mult">False</Value>
+              <Value name="trend_type_auto">True</Value>
+              <Value name="trend_type_add">False</Value>
+              <Value name="trend_type_mult">False</Value>
+              <Value name="trend_type_none">False</Value>
+              <Value name="trend_damp_auto">True</Value>
+              <Value name="trend_damp_yes">False</Value>
+              <Value name="trend_damp_no">False</Value>
+              <Value name="seas_auto">True</Value>
+              <Value name="seas_add">False</Value>
+              <Value name="seas_mult">False</Value>
+              <Value name="seas_none">False</Value>
+              <Value name="ic_auto">True</Value>
+              <Value name="ic_aic">False</Value>
+              <Value name="ic_aicc">False</Value>
+              <Value name="ic_bic">False</Value>
+              <Value name="box_cox">False</Value>
+              <Value name="lambda">0.00</Value>
+              <Value name="series_start">True</Value>
+              <Value name="start_year">2002</Value>
+              <Value name="start_month_qtr">1</Value>
+              <Value name="forecast_periods">6</Value>
+              <Value name="alteryx.week.US">True</Value>
+              <Value name="alteryx.week.UK">False</Value>
+              <Value name="alteryx.week.ISO8601">False</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Report">
+              <RecordInfo>
+                <Field name="Report" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Interactive">
+              <RecordInfo>
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="198" y="428" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Year" source="R-DATA:" type="Double" />
+                <Field name="Month" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Bookings" source="R-DATA:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="294" y="428" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[RecordID] &lt; 109</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[RecordID] &lt; 109</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Year" source="R-DATA:" type="Double" />
+                <Field name="Month" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Bookings" source="R-DATA:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Year" source="R-DATA:" type="Double" />
+                <Field name="Month" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Bookings" source="R-DATA:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="690" y="260" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings>
+            <Position x="690" y="464" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\TS_Compare.yxmc" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="392" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_ca5852091fd64e539c5dd550e6fcc668_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="440" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_3756c13a445147f1b31e4d1f9cacff47_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="488" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_1a0a9832fd514fea80842827edec26dd_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="497" y="583" width="541" height="386" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Covariate</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="750" y="836" width="84" height="108" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Estimated Covariate for prediction periods</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="522" y="716" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="120" />
+              <Fields>
+                <Field name="Year" />
+                <Field name="Month" />
+                <Field name="Bookings" />
+                <Field name="Workers" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2002</c>
+                  <c>Jan</c>
+                  <c>383</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Feb</c>
+                  <c>366</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Mar</c>
+                  <c>250</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Apr</c>
+                  <c>318</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>May</c>
+                  <c>334</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Jun</c>
+                  <c>397</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Jul</c>
+                  <c>575</c>
+                  <c>21</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Aug</c>
+                  <c>701</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Sep</c>
+                  <c>506</c>
+                  <c>21</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Oct</c>
+                  <c>335</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Nov</c>
+                  <c>372</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>2002</c>
+                  <c>Dec</c>
+                  <c>580</c>
+                  <c>26</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Jan</c>
+                  <c>751</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Feb</c>
+                  <c>498</c>
+                  <c>24</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Mar</c>
+                  <c>649</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Apr</c>
+                  <c>478</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>May</c>
+                  <c>606</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Jun</c>
+                  <c>980</c>
+                  <c>30</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Jul</c>
+                  <c>1137</c>
+                  <c>37</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Aug</c>
+                  <c>1280</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Sep</c>
+                  <c>987</c>
+                  <c>39</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Oct</c>
+                  <c>723</c>
+                  <c>32</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Nov</c>
+                  <c>545</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>2003</c>
+                  <c>Dec</c>
+                  <c>731</c>
+                  <c>30</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Jan</c>
+                  <c>1615</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Feb</c>
+                  <c>1219</c>
+                  <c>39</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Mar</c>
+                  <c>940</c>
+                  <c>34</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Apr</c>
+                  <c>670</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>May</c>
+                  <c>972</c>
+                  <c>38</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Jun</c>
+                  <c>1543</c>
+                  <c>51</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Jul</c>
+                  <c>2079</c>
+                  <c>70</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Aug</c>
+                  <c>1928</c>
+                  <c>61</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Sep</c>
+                  <c>1509</c>
+                  <c>51</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Oct</c>
+                  <c>1047</c>
+                  <c>36</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Nov</c>
+                  <c>712</c>
+                  <c>30</c>
+                </r>
+                <r>
+                  <c>2004</c>
+                  <c>Dec</c>
+                  <c>1492</c>
+                  <c>48</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Jan</c>
+                  <c>2214</c>
+                  <c>69</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Feb</c>
+                  <c>1928</c>
+                  <c>58</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Mar</c>
+                  <c>1780</c>
+                  <c>59</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Apr</c>
+                  <c>1458</c>
+                  <c>54</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>May</c>
+                  <c>1573</c>
+                  <c>56</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Jun</c>
+                  <c>2138</c>
+                  <c>66</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Jul</c>
+                  <c>2864</c>
+                  <c>87</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Aug</c>
+                  <c>3216</c>
+                  <c>103</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Sep</c>
+                  <c>1927</c>
+                  <c>67</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Oct</c>
+                  <c>1415</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Nov</c>
+                  <c>1371</c>
+                  <c>51</c>
+                </r>
+                <r>
+                  <c>2005</c>
+                  <c>Dec</c>
+                  <c>2629</c>
+                  <c>89</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Jan</c>
+                  <c>3392</c>
+                  <c>106</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Feb</c>
+                  <c>3246</c>
+                  <c>104</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Mar</c>
+                  <c>2334</c>
+                  <c>72</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Apr</c>
+                  <c>1723</c>
+                  <c>52</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>May</c>
+                  <c>2458</c>
+                  <c>83</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Jun</c>
+                  <c>2709</c>
+                  <c>82</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Jul</c>
+                  <c>4615</c>
+                  <c>142</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Aug</c>
+                  <c>5739</c>
+                  <c>179</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Sep</c>
+                  <c>2913</c>
+                  <c>95</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Oct</c>
+                  <c>1939</c>
+                  <c>64</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Nov</c>
+                  <c>2039</c>
+                  <c>70</c>
+                </r>
+                <r>
+                  <c>2006</c>
+                  <c>Dec</c>
+                  <c>3312</c>
+                  <c>104</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Jan</c>
+                  <c>7146</c>
+                  <c>218</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Feb</c>
+                  <c>4093</c>
+                  <c>123</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Mar</c>
+                  <c>3537</c>
+                  <c>108</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Apr</c>
+                  <c>2757</c>
+                  <c>92</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>May</c>
+                  <c>3045</c>
+                  <c>92</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Jun</c>
+                  <c>4827</c>
+                  <c>151</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Jul</c>
+                  <c>4163</c>
+                  <c>129</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Aug</c>
+                  <c>7811</c>
+                  <c>241</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Sep</c>
+                  <c>4644</c>
+                  <c>149</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Oct</c>
+                  <c>4645</c>
+                  <c>145</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Nov</c>
+                  <c>2980</c>
+                  <c>89</c>
+                </r>
+                <r>
+                  <c>2007</c>
+                  <c>Dec</c>
+                  <c>4515</c>
+                  <c>141</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Jan</c>
+                  <c>8133</c>
+                  <c>248</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Feb</c>
+                  <c>5337</c>
+                  <c>168</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Mar</c>
+                  <c>3946</c>
+                  <c>120</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Apr</c>
+                  <c>4286</c>
+                  <c>136</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>May</c>
+                  <c>4761</c>
+                  <c>144</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Jun</c>
+                  <c>7012</c>
+                  <c>212</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Jul</c>
+                  <c>8237</c>
+                  <c>248</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Aug</c>
+                  <c>8553</c>
+                  <c>257</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Sep</c>
+                  <c>6198</c>
+                  <c>192</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Oct</c>
+                  <c>4872</c>
+                  <c>147</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Nov</c>
+                  <c>4892</c>
+                  <c>157</c>
+                </r>
+                <r>
+                  <c>2008</c>
+                  <c>Dec</c>
+                  <c>5880</c>
+                  <c>176</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Jan</c>
+                  <c>11878</c>
+                  <c>361</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Feb</c>
+                  <c>9398</c>
+                  <c>289</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Mar</c>
+                  <c>8083</c>
+                  <c>251</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Apr</c>
+                  <c>5634</c>
+                  <c>172</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>May</c>
+                  <c>7675</c>
+                  <c>237</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Jun</c>
+                  <c>10328</c>
+                  <c>314</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Jul</c>
+                  <c>10539</c>
+                  <c>319</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Aug</c>
+                  <c>15578</c>
+                  <c>477</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Sep</c>
+                  <c>11067</c>
+                  <c>338</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Oct</c>
+                  <c>7534</c>
+                  <c>233</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Nov</c>
+                  <c>7023</c>
+                  <c>218</c>
+                </r>
+                <r>
+                  <c>2009</c>
+                  <c>Dec</c>
+                  <c>10733</c>
+                  <c>322</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Jan</c>
+                  <c>11853</c>
+                  <c>361</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Feb</c>
+                  <c>10716</c>
+                  <c>323</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Mar</c>
+                  <c>7405</c>
+                  <c>228</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Apr</c>
+                  <c>7009</c>
+                  <c>220</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>May</c>
+                  <c>8340</c>
+                  <c>250</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Jun</c>
+                  <c>12437</c>
+                  <c>379</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Jul</c>
+                  <c>12269</c>
+                  <c>378</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Aug</c>
+                  <c>16171</c>
+                  <c>495</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Sep</c>
+                  <c>10116</c>
+                  <c>308</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Oct</c>
+                  <c>10479</c>
+                  <c>324</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Nov</c>
+                  <c>7214</c>
+                  <c>220</c>
+                </r>
+                <r>
+                  <c>2010</c>
+                  <c>Dec</c>
+                  <c>13080</c>
+                  <c>394</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Jan</c>
+                  <c>17363</c>
+                  <c>527</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Feb</c>
+                  <c>16952</c>
+                  <c>509</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Mar</c>
+                  <c>9012</c>
+                  <c>279</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Apr</c>
+                  <c>7730</c>
+                  <c>242</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>May</c>
+                  <c>12345</c>
+                  <c>373</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Jun</c>
+                  <c>12055</c>
+                  <c>371</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Jul</c>
+                  <c>14496</c>
+                  <c>442</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Aug</c>
+                  <c>15654</c>
+                  <c>470</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Sep</c>
+                  <c>11063</c>
+                  <c>339</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Oct</c>
+                  <c>7934</c>
+                  <c>244</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Nov</c>
+                  <c>7108</c>
+                  <c>222</c>
+                </r>
+                <r>
+                  <c>2011</c>
+                  <c>Dec</c>
+                  <c>11209</c>
+                  <c>340</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Year" source="TextInput:" type="Int16" />
+                <Field name="Month" size="3" source="TextInput:" type="String" />
+                <Field name="Bookings" source="TextInput:" type="Int16" />
+                <Field name="Workers" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings>
+            <Position x="618" y="716" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="mod_name">CovariateARIMA</Value>
+              <Value name="target_field">Bookings</Value>
+              <Value name="use_covar">True</Value>
+              <Value name="covars">"Workers"</Value>
+              <Value name="use_covar_mean">True</Value>
+              <Value name="use_covar_diff">False</Value>
+              <Value name="freq_hourly">False</Value>
+              <Value name="freq_daily">False</Value>
+              <Value name="freq_weekdays">False</Value>
+              <Value name="freq_weekly">False</Value>
+              <Value name="freq_monthly">True</Value>
+              <Value name="freq_quarterly">False</Value>
+              <Value name="freq_annually">False</Value>
+              <Value name="freq_other">False</Value>
+              <Value name="custom_auto">False</Value>
+              <Value name="first_dif">False</Value>
+              <Value name="level_first_dif">0</Value>
+              <Value name="max_p">2</Value>
+              <Value name="max_q">2</Value>
+              <Value name="seas_dif">False</Value>
+              <Value name="level_seas_dif">0</Value>
+              <Value name="s_max_P">1</Value>
+              <Value name="s_max_Q">1</Value>
+              <Value name="ic_aic">False</Value>
+              <Value name="ic_aicc">True</Value>
+              <Value name="ic_bic">False</Value>
+              <Value name="full_enum">False</Value>
+              <Value name="max_order">5</Value>
+              <Value name="m_core">False</Value>
+              <Value name="drift">True</Value>
+              <Value name="box_cox">False</Value>
+              <Value name="lambda">0.00</Value>
+              <Value name="full_custom">False</Value>
+              <Value name="p">0</Value>
+              <Value name="d">0</Value>
+              <Value name="q">0</Value>
+              <Value name="S_P">0</Value>
+              <Value name="S_D">0</Value>
+              <Value name="S_Q">0</Value>
+              <Value name="m_drift">False</Value>
+              <Value name="m_box_cox">False</Value>
+              <Value name="m_lambda">0.00</Value>
+              <Value name="series_start">True</Value>
+              <Value name="start_year">2002</Value>
+              <Value name="start_month_qtr">1</Value>
+              <Value name="forecast_periods">6</Value>
+              <Value name="alteryx.week.US">True</Value>
+              <Value name="alteryx.week.UK">False</Value>
+              <Value name="alteryx.week.ISO8601">False</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.00</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Report">
+              <RecordInfo>
+                <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Interactive">
+              <RecordInfo>
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="714" y="656" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_5966318d423f4bc68fc5c1a55d7799a0_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="714" y="716" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_e879bec0a16f477e8bef22894deb55a7_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="714" y="776" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_bb5c784feb3e441d956644d9eae97507_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings>
+            <Position x="858" y="716" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="forecast">forecast</Value>
+              <Value name="large_conf">95</Value>
+              <Value name="small_conf">80</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\TS_Covariate_Forecast.yxmc" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="954" y="632" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_eb0f4a4d86fd46449dc4dfc2ed1dcd5d_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="954" y="716" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_5f50ccbb4d574f3aa75fc3b92e64bea6_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="954" y="800" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ANA~1.MUN\AppData\Local\Temp\Engine_9844_8ae2bc7e14cf4882b0a1115553264de1_\Engine_19796_ce98298b94a64dd1ba3afe57deab85b9_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="762" y="884" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Workers" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>500</c>
+                </r>
+                <r>
+                  <c>480</c>
+                </r>
+                <r>
+                  <c>320</c>
+                </r>
+                <r>
+                  <c>316</c>
+                </r>
+                <r>
+                  <c>446</c>
+                </r>
+                <r>
+                  <c>539</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Workers" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Report" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Interactive Viz" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Report" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Interactive" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Interactive" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Report" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="False" />
+      <Destination ToolID="18" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Report" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Interactive" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Report" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Interactive" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="37" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="37" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Report" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Interactive" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>TS04_2022</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0c38b89e-fc94-4ed5-9862-edb9314472b2" />
+      <Telemetry>
+        <PreviousWorkflowId value="040eb37a-05ec-4498-8512-0835fdfcb4bc" />
+        <OriginWorkflowId value="49103eb5-562d-425a-8b17-8681e3630ec8" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
