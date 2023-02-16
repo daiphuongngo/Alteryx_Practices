@@ -1,0 +1,1130 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_14856_995a74d961b94aeca834c62d14c1614d_\Engine_22996_50db6559d9de4b4ca20cf57caecc70b5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="402" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_14856_995a74d961b94aeca834c62d14c1614d_\Engine_22996_c7ab1538adda4ddfab6ad8320f68d095_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="group" selected="False" />
+            <SelectField field="value" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="33" />
+          <Fields>
+            <Field name="name" />
+            <Field name="group" />
+            <Field name="value" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ANGELA</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>2</c>
+              <c>85.7761904761905</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>2</c>
+              <c>11.7583333333333</c>
+            </r>
+            <r>
+              <c>CREW MEMBER</c>
+              <c>2</c>
+              <c>3.79523809523809</c>
+            </r>
+            <r>
+              <c>DASHIELL</c>
+              <c>2</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>DRIVER</c>
+              <c>2</c>
+              <c>5.5</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+            <r>
+              <c>GALBRAITH</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>GUTTERBUHG</c>
+              <c>2</c>
+              <c>11.6285714285714</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>2</c>
+              <c>262.607142857143</c>
+            </r>
+            <r>
+              <c>JULIA</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>KEZURE</c>
+              <c>2</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>MACGOWAN</c>
+              <c>1</c>
+              <c>3.5</c>
+            </r>
+            <r>
+              <c>MAN</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+            <r>
+              <c>MARCUS</c>
+              <c>2</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>MEPHISTO</c>
+              <c>2</c>
+              <c>3.79523809523809</c>
+            </r>
+            <r>
+              <c>OLD MAN</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+            <r>
+              <c>OLD WOMAN</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+            <r>
+              <c>PORTER</c>
+              <c>2</c>
+              <c>27.3696428571429</c>
+            </r>
+            <r>
+              <c>POSTMAN</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>PRIESTLY</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>REBECCA</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>SCRAGGY</c>
+              <c>2</c>
+              <c>3.85833333333333</c>
+            </r>
+            <r>
+              <c>SUN WU KUNG</c>
+              <c>2</c>
+              <c>44.6529761904762</c>
+            </r>
+            <r>
+              <c>TEDDY</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>VILLAGER</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+            <r>
+              <c>VIRGIL</c>
+              <c>3</c>
+              <c>1.60416666666667</c>
+            </r>
+            <r>
+              <c>WOMAN</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+            <r>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+              <c>2.75</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="134" />
+          <Fields>
+            <Field name="from" />
+            <Field name="to" />
+            <Field name="weight" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ANGELA</c>
+              <c>BETSY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>CHARLES</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>DEAN COVENTRY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>INDIANA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>JULIA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>POSTMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>PRIESTLY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>CLARE</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>DASHIELL</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>DEAN COVENTRY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>GUTTERBUHG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>MEPHISTO</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>POSTMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>PRIESTLY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>SCRAGGY</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>SUN WU KUNG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>CHARLES</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>DEAN COVENTRY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>INDIANA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>POSTMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>PRIESTLY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>DASHIELL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>INDIANA</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>MEPHISTO</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>PORTER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>SCRAGGY</c>
+              <c>9</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>SUN WU KUNG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>CREW MEMBER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>CREW MEMBER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>FIRST DRAFT</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>INDIANA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>MACGOWAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>OLD MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>OLD WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FIRST DRAFT</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>GUTTERBUHG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DASHIELL</c>
+              <c>GUTTERBUHG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DRIVER</c>
+              <c>GUTTERBUHG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>GUTTERBUHG</c>
+              <c>INDIANA</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>GUTTERBUHG</c>
+              <c>PORTER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>INDIANA</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>DASHIELL</c>
+              <c>INDIANA</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>INDIANA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DRIVER</c>
+              <c>INDIANA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>INDIANA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>GALBRAITH</c>
+              <c>INDIANA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>MACGOWAN</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>MARCUS</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>MEPHISTO</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>OLD MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>OLD WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>PORTER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>POSTMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>PRIESTLY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>SCRAGGY</c>
+              <c>13</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>JULIA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>JULIA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>JULIA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>JULIA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>JULIA</c>
+              <c>POSTMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>JULIA</c>
+              <c>PRIESTLY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>JULIA</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>KEZURE</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>CLARE</c>
+              <c>KEZURE</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>KEZURE</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>KEZURE</c>
+              <c>SCRAGGY</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>KEZURE</c>
+              <c>SUN WU KUNG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>MACGOWAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>GALBRAITH</c>
+              <c>MACGOWAN</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>MACGOWAN</c>
+              <c>MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MACGOWAN</c>
+              <c>OLD MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MACGOWAN</c>
+              <c>OLD WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MACGOWAN</c>
+              <c>WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MACGOWAN</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MAN</c>
+              <c>OLD MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MAN</c>
+              <c>WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>MARCUS</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>OLD MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>OLD MAN</c>
+              <c>WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>OLD WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MAN</c>
+              <c>OLD WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>OLD MAN</c>
+              <c>OLD WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>OLD WOMAN</c>
+              <c>WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>PORTER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>POSTMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>PRIESTLY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>POSTMAN</c>
+              <c>PRIESTLY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>PRIESTLY</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>POSTMAN</c>
+              <c>REBECCA</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CREW MEMBER</c>
+              <c>SCRAGGY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DASHIELL</c>
+              <c>SCRAGGY</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>GUTTERBUHG</c>
+              <c>SCRAGGY</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>MEPHISTO</c>
+              <c>SCRAGGY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>PORTER</c>
+              <c>SCRAGGY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>SCRAGGY</c>
+              <c>SUN WU KUNG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>SUN WU KUNG</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ANGELA</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>JULIA</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>POSTMAN</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>PRIESTLY</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>REBECCA</c>
+              <c>TEDDY</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>TEDDY</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>VILLAGER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MACGOWAN</c>
+              <c>VILLAGER</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>BETSY</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>CHARLES</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>DEAN COVENTRY</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>INDIANA</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>JULIA</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>POSTMAN</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>PRIESTLY</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>REBECCA</c>
+              <c>VIRGIL</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>WOMAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>ELDERLY WOMAN</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>MAN</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>OLD MAN</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>OLD WOMAN</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>WOMAN</c>
+              <c>YOUNG MAN</c>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings>
+        <Position x="294" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="node_color_border">#2B7CE9</Value>
+          <Value name="node_color_background">#D2E5FF</Value>
+          <Value name="node_shape">dot</Value>
+          <Value name="size_fixed">True</Value>
+          <Value name="node_size_fixed">25</Value>
+          <Value name="size_by_variable">False</Value>
+          <Value name="node_size_by_variable" />
+          <Value name="size_by_statistic">False</Value>
+          <Value name="node_size_by_statistic">degree</Value>
+          <Value name="group_nodes">False</Value>
+          <Value name="group_by_variable">True</Value>
+          <Value name="node_group_by_variable" />
+          <Value name="group_by_statistic">False</Value>
+          <Value name="node_group_by_statistic">fastgreedy.community</Value>
+          <Value name="is_directed">False</Value>
+          <Value name="edge_color_opacity">1.0</Value>
+          <Value name="need_layout">False</Value>
+          <Value name="layout_algo">layout.fruchterman.reingold</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\NetworkViz.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="402" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>H</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Text" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="582" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType />
+          <OutputFile>.\Interactive Output.htm</OutputFile>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="True" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit>
+            <Dependency Path=".\Interactive Output.htm" Package="False" IsMacro="False" IsOutput="True" IsAlias="False" />
+          </Implicit>
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="16" Connection="Nodes" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Edges" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Data" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Interactive" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Interactive Output from Predictive Tools</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="feb8f55f-88ee-4b39-8468-fa67249377e8" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="feb8f55f-88ee-4b39-8468-fa67249377e8" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

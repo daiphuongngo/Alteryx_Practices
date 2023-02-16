@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="366" width="456" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 3 - Assign Clusters</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="186" width="456" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Step 2 - Clustering ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="456" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 1- Diagnostics</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings>
+        <Position x="186" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model name">Squishy</Value>
+          <Value name="the fields">SepalLengthCm + SepalWidthCm + PetalLengthCm + PetalWidthCm</Value>
+          <Value name="standardize">True</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">True</Value>
+          <Value name="k-medians">False</Value>
+          <Value name="neural gas">False</Value>
+          <Value name="num clus">3</Value>
+          <Value name="num seeds">10</Value>
+          <Value name="plot points">False</Value>
+          <Value name="plot centroids">True</Value>
+          <Value name="max comp">2</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+            <Field name="Sum_Dists" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Cluster_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">iris.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>iris.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Id" size="254" source="File: C:\Users\sfirmin\Documents\R\iris-species\Iris.csv" type="V_String" />
+            <Field name="SepalLengthCm" source="File: C:\Users\sfirmin\Documents\R\iris-species\Iris.csv" type="Double" />
+            <Field name="SepalWidthCm" source="File: C:\Users\sfirmin\Documents\R\iris-species\Iris.csv" type="Double" />
+            <Field name="PetalLengthCm" source="File: C:\Users\sfirmin\Documents\R\iris-species\Iris.csv" type="Double" />
+            <Field name="PetalWidthCm" source="File: C:\Users\sfirmin\Documents\R\iris-species\Iris.csv" type="Double" />
+            <Field name="Species" size="254" source="File: C:\Users\sfirmin\Documents\R\iris-species\Iris.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_2908_1d5933fa73ba42969cd5ae0093a20158_\Engine_22996_9abde2e60bfb4875b322d7ec859575ed_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_2908_1d5933fa73ba42969cd5ae0093a20158_\Engine_22996_dfa7593a4ec941efb15d6ad05ae46ef1_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="186" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="the fields">SepalLengthCm + SepalWidthCm + PetalLengthCm + PetalWidthCm</Value>
+          <Value name="standardize">True</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">True</Value>
+          <Value name="k-medians">False</Value>
+          <Value name="neural gas">False</Value>
+          <Value name="min clus">2</Value>
+          <Value name="max clus">6</Value>
+          <Value name="bootstrap rep">50</Value>
+          <Value name="num seeds">10</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Diagnostics.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="282" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_2908_1d5933fa73ba42969cd5ae0093a20158_\Engine_22996_106531afbe0e49d99f87c36af95fdb96_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="294" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="clus name">Cluster</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Id" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="SepalLengthCm" source="R-DATA:" type="Double" />
+            <Field name="SepalWidthCm" source="R-DATA:" type="Double" />
+            <Field name="PetalLengthCm" source="R-DATA:" type="Double" />
+            <Field name="PetalWidthCm" source="R-DATA:" type="Double" />
+            <Field name="Species" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Cluster" source="R-DATA:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Append_Cluster.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="402" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_2908_1d5933fa73ba42969cd5ae0093a20158_\Engine_22996_5ae62da082224ee2a8c8379c8c09d27f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings>
+        <Position x="570" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">SepalLengthCm + SepalWidthCm + PetalLengthCm + PetalWidthCm</Value>
+          <Value name="scale">False</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">2</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Id" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="SepalLengthCm" source="R-DATA:" type="Double" />
+            <Field name="SepalWidthCm" source="R-DATA:" type="Double" />
+            <Field name="PetalLengthCm" source="R-DATA:" type="Double" />
+            <Field name="PetalWidthCm" source="R-DATA:" type="Double" />
+            <Field name="Species" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="PC1" source="R-DATA:" type="Double" />
+            <Field name="PC2" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_2908_1d5933fa73ba42969cd5ae0093a20158_\Engine_22996_ab2b29e00b7f48989ef0e3c6ac6fb215_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Reports" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="First Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Second Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="13" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Reports" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Reports" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>KCentroidsToolMastery</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a537f2f3-2086-485d-8858-b1ee731ec260" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="a537f2f3-2086-485d-8858-b1ee731ec260" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
