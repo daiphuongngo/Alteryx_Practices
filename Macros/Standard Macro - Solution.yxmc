@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input1</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ngod6\Downloads\Data Investigation Exercise\Data Investigation Exercise.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Investigation Exercise.yxdb</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="raceId" size="254" source="File: " type="V_WString" />
+            <Field name="year" size="254" source="File: " type="V_WString" />
+            <Field name="round" size="254" source="File: " type="V_WString" />
+            <Field name="circuitId" size="254" source="File: " type="V_WString" />
+            <Field name="name" size="254" source="File: " type="V_WString" />
+            <Field name="date" size="254" source="File: " type="V_WString" />
+            <Field name="lap" source="(Multiple Sources)" type="Byte" />
+            <Field name="position" size="254" source="File: " type="V_WString" />
+            <Field name="time" size="254" source="File: " type="V_WString" />
+            <Field name="milliseconds" source="File: " type="Double" />
+            <Field name="Right_driverId" size="254" source="File: " type="V_WString" />
+            <Field name="driverRef" size="254" source="File: " type="V_WString" />
+            <Field name="code" size="254" source="File: " type="V_WString" />
+            <Field name="forename" size="254" source="File: " type="V_WString" />
+            <Field name="surname" size="254" source="File: " type="V_WString" />
+            <Field name="Tire Choice" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="stop" size="254" source="File: " type="V_WString" />
+            <Field name="Time of Pit" size="254" source="File: " type="V_WString" />
+            <Field name="Pit Duration" size="254" source="File: " type="V_WString" />
+            <Field name="Pit_milliseconds" source="File: " type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="198" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="raceId" selected="True" />
+            <Field field="year" selected="True" />
+            <Field field="round" selected="True" />
+            <Field field="circuitId" selected="True" />
+            <Field field="name" selected="True" />
+            <Field field="date" selected="True" />
+            <Field field="position" selected="True" />
+            <Field field="time" selected="True" />
+            <Field field="Right_driverId" selected="True" />
+            <Field field="driverRef" selected="True" />
+            <Field field="code" selected="True" />
+            <Field field="forename" selected="True" />
+            <Field field="surname" selected="True" />
+            <Field field="Tire Choice" selected="True" />
+            <Field field="stop" selected="True" />
+            <Field field="Time of Pit" selected="True" />
+            <Field field="Pit Duration" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="raceId" source="File: " type="Int16" />
+            <Field name="year" source="File: " type="Int16" />
+            <Field name="round" source="File: " type="Byte" />
+            <Field name="circuitId" source="File: " type="Byte" />
+            <Field name="name" size="17" source="File: " type="String" />
+            <Field name="date" source="File: " type="Date" />
+            <Field name="lap" source="(Multiple Sources)" type="Byte" />
+            <Field name="position" source="File: " type="Byte" />
+            <Field name="time" size="8" source="File: " type="String" />
+            <Field name="milliseconds" source="File: " type="Double" />
+            <Field name="Right_driverId" source="File: " type="Int16" />
+            <Field name="driverRef" size="15" source="File: " type="V_String" />
+            <Field name="code" size="3" source="File: " type="String" />
+            <Field name="forename" size="9" source="File: " type="String" />
+            <Field name="surname" size="11" source="File: " type="WString" />
+            <Field name="Tire Choice" size="2" source="Formula: (Multiple Sources)" type="String" />
+            <Field name="stop" source="File: " type="Byte" />
+            <Field name="Time of Pit" source="File: " type="Time" />
+            <Field name="Pit Duration" size="8" source="File: " type="V_String" />
+            <Field name="Pit_milliseconds" source="File: " type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="342" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="lap" />
+            <Field name="milliseconds" />
+            <Field name="Pit_milliseconds" />
+            <Field name="*Unknown" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>"$"+ToString([_CurrentField_], 2, 1)</Expression>
+          <ChangeFieldType value="True" />
+          <OutputFieldType type="V_String" size="20" scale="-1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>"$"+ToString([_CurrentField_], 2, 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="raceId" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="year" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="round" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="circuitId" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="name" size="17" source="File: " type="String" />
+            <Field name="date" source="File: " type="Date" />
+            <Field name="lap" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="position" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="time" size="8" source="File: " type="String" />
+            <Field name="milliseconds" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="Right_driverId" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="driverRef" size="15" source="File: " type="V_String" />
+            <Field name="code" size="3" source="File: " type="String" />
+            <Field name="forename" size="9" source="File: " type="String" />
+            <Field name="surname" size="11" source="File: " type="WString" />
+            <Field name="Tire Choice" size="2" source="Formula: (Multiple Sources)" type="String" />
+            <Field name="stop" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="Time of Pit" source="File: " type="Time" />
+            <Field name="Pit Duration" size="8" source="File: " type="V_String" />
+            <Field name="Pit_milliseconds" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="462" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output4</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+        <Position x="198" y="210" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>List Box (6)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="378" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Question" />
+      <Destination ToolID="6" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Action" />
+      <Destination ToolID="3" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="7" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (1)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (4)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (6)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Standard Macro - Solution</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5e627f99-5b98-454e-bb02-9d5f54234202" />
+      <Telemetry>
+        <PreviousWorkflowId value="fb94a70b-f837-4eb1-8f42-94ced130c1a9" />
+        <OriginWorkflowId value="fb94a70b-f837-4eb1-8f42-94ced130c1a9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateRawXml</Type>
+              <Description />
+              <ToolId value="7" />
+              <Expression>[#1]</Expression>
+              <Destination>3/Fields</Destination>
+              <OuterXml value="False" />
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (5)</Name>
+          <ToolId value="5" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (4)</Name>
+              <ToolId value="4" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>List Box (6)</Description>
+              <Name>List Box (6)</Name>
+              <ToolId value="6" />
+              <Multiple value="True" />
+              <Multiple_Custom value="False" />
+              <Multiple_Default value="False" />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="1" />
+              <Field_IncludeNone value="False" />
+              <MacroField_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</MacroField_FilterTypes>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="4" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

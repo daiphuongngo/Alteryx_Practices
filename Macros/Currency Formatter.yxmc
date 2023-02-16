@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="174" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input1</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ngod6\Downloads\Standard Macro - Start File\_externals\1\Standard Macro - Start Data.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Standard Macro - Start Data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="318" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="raceId" selected="True" />
+            <Field field="year" selected="True" />
+            <Field field="round" selected="True" />
+            <Field field="circuitId" selected="True" />
+            <Field field="name" selected="True" />
+            <Field field="date" selected="True" />
+            <Field field="position" selected="True" />
+            <Field field="time" selected="True" />
+            <Field field="Right_driverId" selected="True" />
+            <Field field="driverRef" selected="True" />
+            <Field field="code" selected="True" />
+            <Field field="forename" selected="True" />
+            <Field field="surname" selected="True" />
+            <Field field="Tire Choice" selected="True" />
+            <Field field="stop" selected="True" />
+            <Field field="Time of Pit" selected="True" />
+            <Field field="Pit Duration" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="30" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Job Title" size="50" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Base Pay" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="Double" />
+            <Field name="Overtime Pay" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="Double" />
+            <Field name="Other Pay" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="Double" />
+            <Field name="Total Pay" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="Double" />
+            <Field name="City" size="13" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="462" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Base Pay" />
+            <Field name="Overtime Pay" />
+            <Field name="Other Pay" />
+            <Field name="Total Pay" />
+            <Field name="*Unknown" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>"$"+ToString([_CurrentField_], 2, 1)</Expression>
+          <ChangeFieldType value="True" />
+          <OutputFieldType type="V_String" size="20" scale="-1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>"$"+ToString([_CurrentField_], 2, 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="30" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Job Title" size="50" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="V_String" />
+            <Field name="Base Pay" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="Overtime Pay" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="Other Pay" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="Total Pay" size="20" source="Formula: &quot;$&quot;+ToString([_CurrentField_], 2, 1)" type="V_String" />
+            <Field name="City" size="13" source="File: C:\Users\cusic\Desktop\Macros\Standard Macro\starting_workflow\san_francisco_2011.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="582" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output4</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (1)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (4)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Currency Formatter</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9be3cdf7-f1b3-4099-8553-13bf89017c7d" />
+      <Telemetry>
+        <PreviousWorkflowId value="5e627f99-5b98-454e-bb02-9d5f54234202" />
+        <OriginWorkflowId value="fb94a70b-f837-4eb1-8f42-94ced130c1a9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (5)</Name>
+          <ToolId value="5" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>Macro Output (4)</Name>
+              <ToolId value="4" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="4" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
