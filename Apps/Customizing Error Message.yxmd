@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="656" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File FileFormat="19" OutputFileName="FileName" RecordLimit="" SearchSubDirs="False">_externals\1\airlines_data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>airlines_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\svn_cmb\alteryx_academy\05_apps\data\airlines\*.csv" type="Date" />
+            <Field name="Available Seat Miles Domestic (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Available Seat Miles International (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of Domestic Flights" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of International Flights" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of Domestic Passengers" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of International Passengers" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Revenue Passenger Miles, Domestic (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Revenue Passenger Miles, International (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field description="RegEx: Parsed from FileName" name="Airline" size="254" source="Formula: Replace([Airline], &quot;_&quot;, &quot; &quot;)" type="V_WString" />
+            <Field description="RegEx: Parsed from FileName" name="Origin Airport Code" size="254" source="RegEx: Parsed from FileName" type="V_WString" />
+            <Field name="Origin Airport Name" size="254" source="File: C:\svn_cmb\alteryx_academy\05_apps\data\airport_codes.csv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="294" y="656" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Date</Field>
+          <RegExExpression value="(\d+)-(\d+)-(\d+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Year" type="V_WString" size="4" />
+            <Field field="Month" type="V_WString" size="254" />
+            <Field field="Day" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>Date_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="656" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FileName" rename="Airline Name" selected="True" />
+            <SelectField field="Date" selected="True" />
+            <SelectField field="Available Seat Miles Domestic (in thousands)" selected="True" />
+            <SelectField field="Available Seat Miles International (in thousands)" selected="True" />
+            <SelectField field="Number of Domestic Flights" selected="True" />
+            <SelectField field="Number of International Flights" selected="True" />
+            <SelectField field="Number of Domestic Passengers" selected="True" />
+            <SelectField field="Number of International Passengers" selected="True" />
+            <SelectField field="Revenue Passenger Miles, Domestic (in thousands)" selected="True" />
+            <SelectField field="Revenue Passenger Miles, International (in thousands)" selected="True" />
+            <SelectField field="Origin Airport Code" selected="True" />
+            <SelectField field="Origin Airport Name" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="594" y="644" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Airline Name] IN("Escape Air")</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Airline Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-07-20 09:40:48</PeriodDate>
+              <PeriodType />
+              <PeriodCount>0</PeriodCount>
+              <Operand>Alpha Airlines</Operand>
+              <StartDate>2018-07-20 09:40:48</StartDate>
+              <EndDate>2018-07-20 09:40:48</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Airline Name] IN("Alpha Airlines")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="486" y="644" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Airport Codes" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Origin Airport Code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Airport Codes" selected="False" />
+                <SelectField field="Right_Airline Name" selected="False" />
+                <SelectField field="Right_Origin Airport Code" selected="False" />
+                <SelectField field="Right_Origin Airport Name" selected="False" />
+                <SelectField field="Right_Airline" rename="Airline Name" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="306" y="560" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Airport Codes</Field>
+          <Delimeters value="\n" />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="210" y="560" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Airport Codes" />
+          </Fields>
+          <Data>
+            <r>
+              <c>LAX</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1014" y="632" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_6236_16666b582f55428eaaef4d20d71cfcc6_\Engine_24020_6727ecaf6d1841dfbad4175270d6615f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="690" y="632" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField action="GroupBy" field="Date" rename="Date" />
+            <SummarizeField action="Sum" field="Number of Domestic Flights" rename="Number of Domestic Flights" />
+            <SummarizeField action="Sum" field="Number of Domestic Passengers" rename="Number of Domestic Passengers" />
+            <SummarizeField action="Sum" field="Revenue Passenger Miles, Domestic (in thousands)" rename="Revenue Passenger Miles, Domestic (in thousands)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="918" y="632" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Mode>First</Mode>
+          <N>10</N>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 10</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="786" y="632" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Number of Domestic Flights" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Number of Domestic Flights - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="560" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Uppercase([Airport Codes])" field="Airport Codes" size="3" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Airport Codes = Uppercase([Airport Codes])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="90" y="140" width="648" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Customizing Error Messages
+
+Implement custom error messages in an app interface.</Text>
+          <Font name="Montserrat" size="14.25" style="1" />
+          <TextColor name="White" />
+          <FillColor b="69" g="35" r="13" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="106" width="636" height="32" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This workflow was generated by applying the interface tool changes to the primary workflow.</Text>
+          <Justification Justification="0" />
+          <Shape shape="0" />
+          <FillColor name="White" />
+          <TextColor name="Black" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="636" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Debug Workflow:
+customizing_error_messages.yxwz</Text>
+          <Justification Justification="3" />
+          <Shape shape="0" />
+          <FillColor b="208" g="113" r="10" />
+          <TextColor name="White" />
+          <Font name="Arial" size="14.25" style="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="534" y="65" width="141" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Folded value="True" />
+          <Caption>Debug Log</Caption>
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="559" y="114" width="500" height="254" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Original File: C:\Users\ngod6\Downloads\customizing_error_messages_2021\customizing_error_messages.yxwz
+
+App Values:
+<WizardValues>
+<Module>C:\Users\ngod6\Downloads\customizing_error_messages_2021\customizing_error_messages.yxwz</Module>
+<Value name="Text Box (7)">LAX</Value>
+<Value name="List Box (5)">"Escape Air"</Value>
+</WizardValues>
+
+
+Actions Log:
+Started running  at Tue Feb 14 19:25:48 2023
+00:00:00.001 - Alteryx: The Condition Named="(Always Run)", Expression="1" was True
+00:00:00.001 - Alteryx: The Action Named="Tool #6", Type="UpdateValue" was run
+00:00:00.001 - Alteryx: The Action Named="Tool #8", Type="Dynamic" was run
+00:00:00.001 - Alteryx: The Action Named="Please enter a 3-character Airport Code", Type="Error" was run
+00:00:00.001 - Alteryx: The Action Named="Please select at least one airline", Type="Error" was run
+
+]]></Text>
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Customizing Error Message</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2f985949-600a-4501-a27e-145efe3230c0" />
+      <Telemetry>
+        <PreviousWorkflowId value="f1eea3e6-d6d4-4b14-b729-ff84010fd49f" />
+        <OriginWorkflowId value="69dc3b03-2ade-4c84-8f24-5bedbeefad85" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

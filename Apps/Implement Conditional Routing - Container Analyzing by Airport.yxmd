@@ -1,0 +1,595 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="500" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File FileFormat="19" OutputFileName="FileName" RecordLimit="" SearchSubDirs="False">_externals\1\airlines_data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>airlines_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\svn_cmb\alteryx_academy\05_apps\data\airlines\*.csv" type="Date" />
+            <Field name="Available Seat Miles Domestic (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Available Seat Miles International (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of Domestic Flights" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of International Flights" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of Domestic Passengers" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Number of International Passengers" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Revenue Passenger Miles, Domestic (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field name="Revenue Passenger Miles, International (in thousands)" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Double" />
+            <Field description="RegEx: Parsed from FileName" name="Airline" size="254" source="Formula: Replace([Airline], &quot;_&quot;, &quot; &quot;)" type="V_WString" />
+            <Field description="RegEx: Parsed from FileName" name="Origin Airport Code" size="254" source="RegEx: Parsed from FileName" type="V_WString" />
+            <Field name="Origin Airport Name" size="254" source="File: C:\svn_cmb\alteryx_academy\05_apps\data\airport_codes.csv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="282" y="500" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Date</Field>
+          <RegExExpression value="(\d+)-(\d+)-(\d+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Year" size="4" type="V_WString" />
+            <Field field="Month" size="254" type="V_WString" />
+            <Field field="Day" size="254" type="V_WString" />
+          </ParseComplex>
+          <Match>
+            <Field>Date_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+(\d+)-(\d+)-(\d+)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="500" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FileName" rename="Airline Name" selected="False" />
+            <SelectField field="Date" selected="True" />
+            <SelectField field="Available Seat Miles Domestic (in thousands)" selected="True" />
+            <SelectField field="Available Seat Miles International (in thousands)" selected="True" />
+            <SelectField field="Number of Domestic Flights" selected="True" />
+            <SelectField field="Number of International Flights" selected="True" />
+            <SelectField field="Number of Domestic Passengers" selected="True" />
+            <SelectField field="Number of International Passengers" selected="True" />
+            <SelectField field="Revenue Passenger Miles, Domestic (in thousands)" selected="True" />
+            <SelectField field="Revenue Passenger Miles, International (in thousands)" selected="True" />
+            <SelectField field="Origin Airport Code" selected="True" />
+            <SelectField field="Origin Airport Name" selected="True" />
+            <SelectField field="Airline" rename="Airline Name" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="114" y="140" width="768" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Implementing Conditional Routing
+
+Use Radio Buttons to enable and disable portions of the workflow in tool containers.  One Tool Container includes interface tools you can use to practice collapsing interface elements.  Because you cannot have interface tools in a disabled Tool Container, you may find that you'll want to create two workflows, one with the additional interface elements and one without. ]]></Text>
+          <Font name="Montserrat" size="12" style="1" />
+          <TextColor name="White" />
+          <FillColor b="69" g="35" r="13" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1158" y="182" width="229" height="50" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption><![CDATA[Interface Tools for Nesting ]]></Caption>
+          <Style BorderColor="#314c4a" FillColor="#ecf2f2" Margin="25" TextColor="#314c4a" Transparency="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="106" width="636" height="32" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This workflow was generated by applying the interface tool changes to the primary workflow.</Text>
+          <Justification Justification="0" />
+          <Shape shape="0" />
+          <FillColor name="White" />
+          <TextColor name="Black" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="636" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Debug Workflow:
+implementing_conditional_routing.yxwz</Text>
+          <Justification Justification="3" />
+          <Shape shape="0" />
+          <FillColor b="208" g="113" r="10" />
+          <TextColor name="White" />
+          <Font name="Arial" size="14.25" style="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="413" y="331" width="493" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Analyze by Airport</Caption>
+          <Style BorderColor="#314c4a" FillColor="#ecf2f2" Margin="25" TextColor="#314c4a" Transparency="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="630" y="380" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Number of Domestic Flights" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Number of Domestic Flights - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="726" y="380" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields orderChanged="False" />
+              <Mode>First</Mode>
+              <N>10</N>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 10</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="534" y="380" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField action="GroupBy" field="Date" rename="Date" />
+                <SummarizeField action="Sum" field="Number of Domestic Flights" rename="Number of Domestic Flights" />
+                <SummarizeField action="Sum" field="Number of Domestic Passengers" rename="Number of Domestic Passengers" />
+                <SummarizeField action="Sum" field="Revenue Passenger Miles, Domestic (in thousands)" rename="Revenue Passenger Miles, Domestic (in thousands)" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="380" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_19688_5494cec9181e40969694387d8f62dc7f_\Engine_22996_1ebb4f99417e4a7088334cba1553a8cf_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="438" y="392" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Origin Airport Code] IN("")</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Origin Airport Code</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-07-17 14:47:39</PeriodDate>
+                  <PeriodType />
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>LAX</Operand>
+                  <StartDate>2018-07-17 14:47:39</StartDate>
+                  <EndDate>2018-07-17 14:47:39</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Origin Airport Code] IN("LAX")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="401" y="547" width="505" height="177" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Analyze by Airline</Caption>
+          <Style BorderColor="#314c4a" FillColor="#ecf2f2" Margin="25" TextColor="#314c4a" Transparency="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="426" y="608" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Airline Name] IN("")</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Airline Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-07-20 09:40:48</PeriodDate>
+                  <PeriodType />
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>Alpha Airlines</Operand>
+                  <StartDate>2018-07-20 09:40:48</StartDate>
+                  <EndDate>2018-07-20 09:40:48</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Airline Name] IN("Alpha Airlines")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="534" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField action="GroupBy" field="Airline Name" rename="Airline Name" />
+                <SummarizeField action="GroupBy" field="Date" rename="Date" />
+                <SummarizeField action="Sum" field="Available Seat Miles Domestic (in thousands)" rename="Available Seat Miles Domestic (in thousands)" />
+                <SummarizeField action="Sum" field="Available Seat Miles International (in thousands)" rename="Available Seat Miles International (in thousands)" />
+                <SummarizeField action="Sum" field="Number of Domestic Flights" rename="Number of Domestic Flights" />
+                <SummarizeField action="Sum" field="Number of International Flights" rename="Number of International Flights" />
+                <SummarizeField action="Sum" field="Number of Domestic Passengers" rename="Number of Domestic Passengers" />
+                <SummarizeField action="Sum" field="Number of International Passengers" rename="Number of International Passengers" />
+                <SummarizeField action="Sum" field="Revenue Passenger Miles, Domestic (in thousands)" rename="Revenue Passenger Miles, Domestic (in thousands)" />
+                <SummarizeField action="Sum" field="Revenue Passenger Miles, International (in thousands)" rename="Revenue Passenger Miles, International (in thousands)" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="618" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Date" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Date - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="726" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields orderChanged="False" />
+              <Mode>First</Mode>
+              <N>10</N>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 10</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ngod6\AppData\Local\Temp\Engine_19688_5494cec9181e40969694387d8f62dc7f_\Engine_22996_420621f878154d5c907008d525ad2596_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="534" y="65" width="141" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Folded value="True" />
+          <Caption>Debug Log</Caption>
+          <Disabled value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="559" y="114" width="500" height="280" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Original File: C:\Users\ngod6\Downloads\Implementing Conditional Routing (1)\implementing_conditional_routing.yxwz
+
+App Values:
+<WizardValues>
+<Module>C:\Users\ngod6\Downloads\Implementing Conditional Routing (1)\implementing_conditional_routing.yxwz</Module>
+<Value name="List Box (48)">""</Value>
+<Value name="List Box (50)">""</Value>
+<Value name="Radio Button (53)">True</Value>
+<Value name="Radio Button (55)">False</Value>
+</WizardValues>
+
+
+Actions Log:
+Started running  at Tue Feb 14 19:36:10 2023
+00:00:00.000 - Alteryx: The Condition Named="(Always Run)", Expression="1" was True
+00:00:00.000 - Alteryx: The Action Named="Tool #49", Type="UpdateValue" was run
+00:00:00.000 - Alteryx: The Action Named="Tool #51", Type="UpdateValue" was run
+00:00:00.000 - Alteryx: The Action Named="Tool #54", Type="Dynamic" was run
+00:00:00.000 - Alteryx: The Action Named="Tool #56", Type="Dynamic" was run
+
+]]></Text>
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="False" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Implement Conditional Routing - Container Analyzing by Airport</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="abc39b80-e37d-4106-b8e4-2750b2624da9" />
+      <Telemetry>
+        <PreviousWorkflowId value="70857284-a279-4a37-bed9-6beb5c9d8da6" />
+        <OriginWorkflowId value="78c340ef-5026-4721-ad6d-48ac94dcc7f5" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
